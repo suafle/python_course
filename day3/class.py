@@ -17,7 +17,7 @@ class Student(Person):
     def printsubject(self):
         return str(self.subject)
     def printnamesubject(self):
-        return print('Name:',self.firstname,self.lastname,', Subject:',self.subject)
+        return 'Name: '+str(self.firstname)+' '+str(self.lastname)+', Subject: '+str(self.subject)
 
 class Teacher(Person):
     def __init__(self,firstname,lastname,teaching):
@@ -27,7 +27,7 @@ class Teacher(Person):
     def printteaching(self):
         return str(self.teaching)
     def printnameteaching(self):
-        return print('Name:',self.firstname,self.lastname,', Teaching:',self.teaching)
+        return 'Name:'+str(self.firstname)+' '+str(self.lastname)+', Teaching: '+str(self.teaching)
 
 
 a = Person('A','B')
