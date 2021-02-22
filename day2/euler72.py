@@ -36,7 +36,6 @@ def factorize(n,primes):
 def phi(n,primes):
     factors = factorize(n,primes)
     p = 1
-
     for i in range(2,n):
         flag = True
         for f in factors:
@@ -49,6 +48,7 @@ def phi(n,primes):
 
 @profile
 def fast_phi(n,primes):
+    #To use the factorize function is the most memory consuming line
     factors = factorize(n,primes)
     phi = factors[0]-1
     for i in range(1,len(factors)):
